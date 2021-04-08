@@ -21,7 +21,7 @@ cd svelte-app
 Install the dependencies...
 
 ```bash
-cd svelte-app
+cd goodread
 npm install
 ```
 
