@@ -16,12 +16,12 @@
 </script>
 <Tailwind />
 <main>
-	<h1>Goodread Library Search</h1>
-	<form>
-		<input type="text" required bind:value={searchKey} />
-		<button class="ml-2 px-5 py-2" on:click|preventDefault={getBookList}>Search</button>
+	<p class="text-4xl font-bold text-indigo-600 lg:text-6xl">Goodread Library Search</p>
+	<form class="mt-3">
+		<input type="text" class="border-indigo-300" required bind:value={searchKey} />
+		<button class="ml-2 mt-2 px-5 py-2 text-indigo-700 border-indigo-300 hover:border-indigo-600" on:click|preventDefault={getBookList}>Search</button>
 	</form>
-	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-col-4 lg:grid-cols-4 gap-3 mt-5 px-3 lg:px-60">
+	<div class="grid grid-cols-2 justify-items-center sm:grid-cols-3 md:grid-col-4 lg:grid-cols-4 xl:grid-cols-5 gap-3 mt-5 px-3 lg:px-48">
 		{#if items}
 			{#each items.list as book}
 				<Book {book} />

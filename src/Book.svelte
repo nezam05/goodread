@@ -2,7 +2,7 @@
     export let book;
 </script>
 
-<div class="flex flex-col w-40 h-auto">
+<div class="flex flex-col w-32 md:w-36">
     <img src={book.imageUrl} alt={book.title} class="object-cover" />
     <p class="text-indigo-600">
         <a href="https://goodread.com/title/{book.goodreadId}">{book.title}</a>
