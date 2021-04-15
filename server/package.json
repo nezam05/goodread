@@ -1,0 +1,16 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "description": "",
+  "start": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "latest",
+    "body-parser": "latest",
+    "bluebird": "latest",
+    "xml2js": "latest",
+    "request": "latest"
+  }
+}
